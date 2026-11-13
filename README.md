@@ -22,6 +22,10 @@ quickbooks-to-ledger-skill.zip   the same folder, ready to upload
   become sub-accounts) and every journal entry, from a **Journal** report
   (CSV or Excel) plus the **Account List**, or from a QuickBooks Desktop
   **.IIF** file.
+- **Customers and vendors**: Ledger's shared list of entities (a business
+  can be both), from the Customer and Vendor Contact Lists, the invoices,
+  bills and the names on transactions; each entry records who it is with.
+  Bank and credit-card accounts are tagged chequing, savings or credit card.
 - **Sales module**: customers and invoices (Customer Contact List, Invoice
   List, or IIF).
 - **Auto sort module**: bills, open or paid (Unpaid Bills, Transaction List
@@ -33,7 +37,7 @@ accounting effect is in the journal entries.
 
 ## Requirements
 
-- **Ledger 0.15.0 or later** to restore the dump. A module whose data is in
+- **Ledger 0.16.0 or later** to restore the dump. A module whose data is in
   the dump (Sales, Auto sort) must be installed in Ledger first.
 - **PostgreSQL 15** where Claude runs its code, because Ledger's server runs
   PostgreSQL 15 and can only read dumps written by that version or older.
